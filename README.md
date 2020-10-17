@@ -1,1 +1,10 @@
-Web with Docker, Travis CI and AWS Configuration
+## 👨‍💻 목표
+
+- 웹을 배포하기 위한 설정 구축
+- 도커, Travis CI, AWS 설정
+
+## 🛠 설정
+
+- 웹은 리액트 기본 설정
+- 도커로 개발환경 구축
+- 소스 수정시 Travis CI로 AWS 사용 자동 배포
