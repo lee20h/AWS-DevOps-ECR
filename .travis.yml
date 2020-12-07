@@ -9,7 +9,7 @@ before_install:
   - echo "start creating an image with dockerfileweb deploy with docker
   - docker build -t lee20h/docker-travis-aws-config -f Dockerfile.dev .
 
-script:web deploy with docker
+script:
   - docker run -e CI=true lee20h/docker-travis-aws-config npm run test -- --coverage
 
 deploy:
