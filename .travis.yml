@@ -18,7 +18,7 @@ deploy:
   region: "us-east-1"
   app: "web deploy with docker"
   env: "WebDeployWithDocker-env"
-  bucket_name: "elasticbeanstalk-ap-northeast-2-089802069060"
+  bucket_name: "elasticbeanstalk-us-east-1-089802069060"
   bucket_path: "web deploy with docker"
   on:
     branch: master
