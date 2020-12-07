@@ -6,7 +6,7 @@ services:
   - docker
 
 before_install:
-  - echo "start creating an image with dockerfileweb deploy with docker
+  - echo "start creating an image with dockerfile"
   - docker build -t lee20h/docker-travis-aws-config -f Dockerfile.dev .
 
 script:
