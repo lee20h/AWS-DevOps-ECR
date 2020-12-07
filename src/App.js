@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          배포 환경 구축
         </a>
       </header>
     </div>

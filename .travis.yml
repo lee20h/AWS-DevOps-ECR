@@ -6,20 +6,20 @@ services:
   - docker
 
 before_install:
-  - echo "start creating an image with dockerfile"
-  - docker build -t lee20h/docker-react-app -f Dockerfile.dev .
+  - echo "start creating an image with dockerfileweb deploy with docker
+  - docker build -t lee20h/docker-travis-aws-config -f Dockerfile.dev .
 
-script: 
-  - docker run -e CI=true lee20h/docker-react-app npm run test -- --coverage
+script:web deploy with docker
+  - docker run -e CI=true lee20h/docker-travis-aws-config npm run test -- --coverage
 
 deploy:
   edge: true
   provider: elasticbeanstalk
-  region: "ap-northeast-2"
-  app: "docker-react-app"
-  env: "DockerReactApp-env"
+  region: "us-east-1"
+  app: "web deploy with docker"
+  env: "WebDeployWithDocker-env"
   bucket_name: "elasticbeanstalk-ap-northeast-2-089802069060"
-  bucket_path: "docker-react-app"
+  bucket_path: "web deploy with docker"
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
