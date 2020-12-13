@@ -1,10 +1,15 @@
 ## 👨‍💻 목표
 
-- 웹을 배포하기 위한 설정 구축
-- 도커, Travis CI, AWS 설정
+- Docker, Travis CI, AWS Elastic Beanstalk 사용한 웹앱 배포 환경 구축
+- AWS DevOps (CodeCommit, CodeBuild, CodePipeline, ECR) 웹앱 배포 환경 구축
+- 구축한 두 환경 비교
 
-## 🛠 설정
+## 🛠 기본 설정
 
-- 웹은 리액트 기본 설정
-- 도커로 개발환경 구축
-- 소스 수정시 Travis CI로 AWS 사용 자동 배포
+- 웹은 create-react-app 기본 설정
+- Dockerfile
+- AWS Elastic Beanstalk Docker 플랫폼
+
+## 👍 결과
+
+- [AWS DevOps와 ECR을 통한 Elastic Beanstalk 배포 환경 구축 및 타 환경과의 비교](https://www2.slideshare.net/ssuserd4f9ff/aws-devops-ecr-elastic-beanstalk-240070104)

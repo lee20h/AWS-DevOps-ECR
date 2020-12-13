@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo Logging in to Amazon ECR...
+      - 
+      - aws --version
+      # - docker login --username AWS -p $(aws ecr get-login-password --region us-east-1) 089802069060.dkr.ecr.us-east-1.amazonaws.com/
+      - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 089802069060.dkr.ecr.us-east-1.amazonaws.com
+      # - docker build -t lee20h/docker-travis-aws-config -f Dockerfile.dev .
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Building the Docker image...          
+      - docker build -t web_container -f Dockerfile.dev .
+      - docker tag web_container:latest 089802069060.dkr.ecr.us-east-1.amazonaws.com/web_container:latest
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Pushing the Docker image...
+      - docker push 089802069060.dkr.ecr.us-east-1.amazonaws.com/web_container:latest

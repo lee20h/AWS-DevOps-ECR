@@ -1,0 +1,9 @@
+{
+  "AWSEBDockerrunVersion": 1,
+  "containerDefinitions": [
+     {
+       "name": "web_container",
+       "image": "089802069060.dkr.ecr.us-east-1.amazonaws.com/web_container:latest"
+     }
+   ]
+}
